@@ -1,0 +1,16 @@
+[project]
+name = "convert-zh"
+version = "0.1.0"
+description = "Convert Simplified Chinese to Traditional Chinese in text files"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opencc-python-reimplemented>=0.1.6",
+    "charset-normalizer>=3.0.0",
+]
+
+[project.scripts]
+convert_zh = "convert_zh.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
